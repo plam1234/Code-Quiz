@@ -1,36 +1,41 @@
-*,
-*::before,
-*::after {
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  font-weight: bold;
 }
 
 body {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  width: 100vw;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
-}
-.container {
-  width: 800px;
-  max-width: 80%;
-  border-radius: 5px;
-  padding: 20px;
-}
-.btn-grid {
-  display: grid;
-  grid-template-rows: auto;
-  gap: 5px;
-  margin: 10px 0;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.btn {
-  border: 1px solid whitesmoke;
+header {
+  padding: 20px;
+  position: relative;
+}
+
+main,
+p,
+ul {
+  margin: 50px;
+}
+
+button {
+  padding: 10px;
+  border-radius: 4px;
+  font-size: medium;
   background-color: purple;
-  border-radius: 5px;
-  padding: 5px 5px;
   color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+#highscore-views {
+  float: left;
+}
+
+#timer-view {
+  float: right;
 }

@@ -3,29 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Code Quiz!</title>
-    <link rel="stylesheet" href="./style.css" />
+    <title>Code Quiz</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Timer -->
-    <div class="time"></div>
-    <div id="main"></div>
-    <!-- Question and button input -->
-    <div class="container">
-      <div id="questions" class="hide">
-        <div id="question">Question</div>
-        <div id="answer-buttons" class="btn-grid">
-          <button class="btn">Answer 1</button>
-          <button class="btn">Answer 2</button>
-          <button class="btn">Answer 3</button>
-          <button class="btn">Answer 4</button>
-        </div>
-      </div>
-      <div class="controls"></div>
-      <button id="start-quiz" class="start-btn btn">Start</button>
-      <button id="next-question" class="next-btn btn hide">Next</button>
-    </div>
-
-    <script src="./script.js"></script>
+    <!-- header that contains highscore and timer -->
+    <header>
+      <span id="highscore-views">
+        <a href="#">View Highscores</a>
+      </span>
+      <div id="timer-view">Time: <span id="secs">30</span></div>
+    </header>
+    <!-- main content -->
+    <main id="main-content">
+      <h1></h1>
+      <p>
+        Answer code-related questions within the time frame.
+      </p>
+      <button id="start-quiz">Start Quiz</button>
+      <ul id="choices-list"></ul>
+    </main>
+    <!-- script tag -->
+    <script src="script.js"></script>
   </body>
 </html>
